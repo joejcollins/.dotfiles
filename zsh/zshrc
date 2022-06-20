@@ -1,0 +1,45 @@
+# Set location of src folder
+SRC="$HOME"
+
+# Configure cd command to look in src folder
+export CDPATH=$SRC
+
+# Export editor
+export EDITOR='code -w'
+
+# starship
+eval "$(starship init zsh)"
+
+# Save a ton of history
+HISTSIZE=20000
+HISTFILE=~/.zsh_history
+SAVEHIST=20000
+
+# Enable completion
+autoload -U compinit
+compinit
+
+# sourcing of other files
+source $SRC/dotfiles/zsh/aliases.zsh
+source $SRC/dotfiles/zsh/functions.zsh
+source $SRC/dotfiles/zsh/custom.zsh
+# ssh completions
+load-ssh-completions
+
+# Disable flow control commands (keeps C-s from freezing everything)
+stty start undef
+stty stop undef
+
+# Tmux colour config
+export TERM=xterm-256color
+
+# You may need to manually set your language environment
+export LANG=en_GB.UTF-8
+
+# Ansible
+export ANSIBLE_ROOT=$HOME/ansible
+
+eval "$(pyenv init -)"
+
+eval "$(pyenv init -)"
+eval "$(pyenv init -)"

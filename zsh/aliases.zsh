@@ -1,0 +1,11 @@
+alias a='ls -lah | sort'
+alias flushdns='sudo dscacheutil -flushcache;sudo killall -HUP mDNSResponder; say cache flushed'
+alias h='cd ~'
+alias httpr="http --follow --all --max-redirects=10 -h --pretty all"
+alias t='tmux'
+alias tmat='tmux attach-session -t'
+alias tmkl='tmux kill-session -t'
+alias tmuxcf='vim ~/.dotfiles/tmux.conf'
+alias ttmu='tmuxinator'
+alias u='cd ..'
+alias x='exit'

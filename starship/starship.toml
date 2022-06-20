@@ -1,0 +1,67 @@
+format = """$directory$git_branch$git_commit$git_state$git_status$elixir$nodejs$ruby$python$golang${custom.docker}$jobs$character"""
+scan_timeout = 10
+add_newline = false
+right_format = """$sudo$status$kubernetes"""
+
+[character]
+success_symbol = "[:](bold yellow)"
+error_symbol = "[:](bold red)"
+
+[directory]
+truncate_to_repo = true
+
+[elixir]
+format = "[$symbol$version](purple bold) "
+symbol = " "
+
+[git_branch]
+format = "[$symbol$branch ](green bold)"
+
+[git_status]
+format = '([\[$all_status$ahead_behind\]]($style grey bold) )'
+
+[golang]
+format = "[$symbol$version](bold blue) "
+symbol = " "
+
+[kubernetes]
+format = '[$context( \($namespace\))]($style white dimmed) '
+symbol = "ﴱ "
+disabled = false
+
+[hostname]
+disabled = false
+ssh_only = false
+style = "bold purple"
+format = "[$hostname]($style) "
+
+[nodejs]
+format = "[$symbol$version](bold yellow) "
+symbol = " "
+
+[jobs]
+symbol = "+ "
+threshold = 1
+
+[custom.docker]
+command = "echo "
+files = ["Dockerfile", "docker-compose.yml", "docker-compose.yaml"]
+when = """ command -v docker &> /dev/null; exit (echo $?); """
+
+[python]
+format = '[${symbol}${pyenv_prefix}(${version} )(\($virtualenv\) )](blue bold)'
+symbol = " "
+python_binary = "python3"
+
+[status]
+style = "bg:grey"
+format = '[\[$common_meaning$signal_name$maybe_int\]]($style) '
+disabled = false
+
+[sudo]
+format = '[sudo ](red bold)'
+disabled = false
+
+[ruby]
+format = "[$symbol$version](bold red) "
+symbol = " "

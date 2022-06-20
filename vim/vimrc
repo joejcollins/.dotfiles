@@ -1,0 +1,14 @@
+set relativenumber
+set number
+set ruler
+set cursorline
+set directory=~/.tmp
+set backupdir=~/.tmp
+set backspace=2
+set shiftwidth=4
+set tabstop=4
+set expandtab
+au BufRead,BufNewFile haproxy* set ft=haproxy
+highlight LineNr ctermfg=grey ctermbg=black
+syntax on
+set background=dark
