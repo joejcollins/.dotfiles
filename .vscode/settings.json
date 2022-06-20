@@ -1,0 +1,9 @@
+{
+    "editor.rulers": [
+      110
+    ],
+    "editor.minimap.enabled": false,
+    "files.associations": {
+      "*config": "ini"
+    }
+}

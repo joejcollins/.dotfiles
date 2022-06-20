@@ -1,0 +1,13 @@
+[user]
+  name = Joe Collins
+  email = joejcollins@gmail.com
+
+[github]
+  user = joejcollins
+
+[core]
+  excludesfile = ~/.gitignore_global
+  editor = vim
+  filemode = false
+  trustctime = false
+    autocrlf = input
