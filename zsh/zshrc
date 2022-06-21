@@ -20,9 +20,9 @@ autoload -U compinit
 compinit
 
 # sourcing of other files
-source $SRC/dotfiles/zsh/aliases.zsh
-source $SRC/dotfiles/zsh/functions.zsh
-source $SRC/dotfiles/zsh/custom.zsh
+source $SRC/.dotfiles/zsh/aliases.zsh
+source $SRC/.dotfiles/zsh/functions.zsh
+source $SRC/.dotfiles/zsh/custom.zsh
 # ssh completions
 load-ssh-completions
 
