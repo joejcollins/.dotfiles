@@ -12,11 +12,11 @@ rm -f ~/.zshrc.pre-oh-my-zsh
 rm -rf ~/.tmp
 
 # Symlink new config files
-ln -s ~/dotfiles/gitconfig ~/.gitconfig
-ln -s ~/dotfiles/gitignore_global ~/.gitignore_global
-ln -s ~/dotfiles/starship/starship.toml ~/.config/starship.toml
-ln -s ~/dotfiles/tmux/tmux.conf ~/.tmux.conf
-ln -s ~/dotfiles/vim ~/.vim
-ln -s ~/dotfiles/vim/vimrc ~/.vimrc
-ln -s ~/dotfiles/zsh/zshrc ~/.zshrc
+ln -s ~/.dotfiles/gitconfig ~/.gitconfig
+ln -s ~/.dotfiles/gitignore_global ~/.gitignore_global
+ln -s ~/.dotfiles/starship/starship.toml ~/.config/starship.toml
+ln -s ~/.dotfiles/tmux/tmux.conf ~/.tmux.conf
+ln -s ~/.dotfiles/vim ~/.vim
+ln -s ~/.dotfiles/vim/vimrc ~/.vimrc
+ln -s ~/.dotfiles/zsh/zshrc ~/.zshrc
 mkdir ~/.tmp
